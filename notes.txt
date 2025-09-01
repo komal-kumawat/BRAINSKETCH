@@ -1,0 +1,28 @@
+Initial setup
+1. install pnpm in local machine 
+        "npm i -g pnpm "
+2. npx create-turbo@latest
+3. cd my-turbo
+4. pnpm i 
+5. pnpm run dev 
+
+
+### backend 
+1. Initialised an empty turborepo
+2. deleted the docs app
+3. Added http-server , ws-server
+4. added packange.json in both the places 
+5. added tsconfig.json in both th e places and imported it 
+from "@repo/typescript-config/base.json"
+6. Added "@repo/typescript-config/base.json" as a dependency in both ws-backend and http-backend
+7. Added a build , dev and start script on both the projects
+8. Update the turbo-config.json in the projects [optional]
+9. Initialise the http server and websocket server
+10. In http-backend : 1. write the signup , signin , create-room endpoint 
+                      2. write the middleware that decode the token and gate the create-room
+
+11. Decode the token in ws-server as well . send the token to the websocket sever in a query param for now.
+12. create a db package
+13. using the db package in the http layer
+14. Add a common package where we add the zod schema and the JWT_SECRET :
+                1. add a backend-common folder in packages folder
