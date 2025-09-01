@@ -26,3 +26,5 @@ from "@repo/typescript-config/base.json"
 13. using the db package in the http layer
 14. Add a common package where we add the zod schema and the JWT_SECRET :
                 1. add a backend-common folder in packages folder
+15. Create a common package where we will write code which is common for bothh frontend and backend ,
+16. Add the zod schema and JWT_SECRET in common package
